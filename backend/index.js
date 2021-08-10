@@ -3,8 +3,8 @@ const cors = require("cors");
 const { dbConnection } = require("./db/db");
 require("dotenv").config();
 
-const Product = require("./routes/Product");
-const Almacen = require("./routes/Almacen");
+const Product = require("./routes/product");
+const Almacen = require("./routes/almacen");
 
 const app = express();
 

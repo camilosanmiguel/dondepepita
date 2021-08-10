@@ -16,7 +16,8 @@ const registerAlmacen = async (req,res) => {
 
 const listAlmacen = async (req,res) => {
     const almacen = await Almacen.find();
-    if(!role) return res.status(401).send("No almacen");
+    if(!almacen) return res.status(401).send("No almacen");
+    return res.status(200).send({almacen});
 };
 
 module.exports = { registerAlmacen , listAlmacen };
